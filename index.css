@@ -34,7 +34,7 @@
     
 }
 .navbar img{
- width: 3em;
+ width: 4em;
  padding: 7px;
  flex-shrink: 1;
 }
@@ -216,4 +216,5 @@ width: 25px;
 .footer a{
     color: red;
     text-decoration: none;
+
 }
