@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --nav-back:#0B0F2A;
+    --head:#FFFFFF;
+    --paragraph:#B8C1EC;
+    --anchorTags:#3A86FF;
+    --anchortaghover:#90DBF4;
+    --font-fimily: 'Roboto', system-ui, sans-serif;
+    --boder:#3a86ff;
+
+}
+@media (max-width: 600px) {
+    .navbar {
+        display: block;
+    }
+
+    .navbar img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.navbar{
+    background-color: var(--nav-back);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 3px 0 3px;
+    position: sticky;
+    gap: 1px;
+    
+}
+.navbar img{
+ width: 3em;
+ padding: 7px;
+ flex-shrink: 1;
+}
+.navact{
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.navact a{
+    margin-left: 20px;
+    color: var(--anchorTags);
+    font-family: var(--font-fimily);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 5px ;
+}
+.navact a:hover{
+    color: var(--anchortaghover);
+}
+/****************HOMEPAGE*********/
+.homepage{
+background-image: url("images/background.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+}
+.homepage h1{
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font-fimily);
+    color: rgb(48, 167, 207);
+    text-align: center;
+}
+.homepage span{
+    border-bottom: 5px solid var(--boder);
+    font-size: 30px;
+}
+.homepage h3{
+    margin-top: 70px;
+    margin-left: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 162, 255);
+    font-family: var(--font-fimily);
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+/******************ABOUT US***********/
+#aboutus{
+    display: flex;
+    flex-wrap: wrap;
+}
+#aboutus h2,
+#ourservicas h2,
+.otherservics h2,
+#contactus h2{
+    margin: 10px auto;
+    text-align: center;
+    font-family: var(--font-fimily);
+   text-transform: capitalize;
+
+}
+.aboutus-one{
+    padding: 20px;
+    font-family: var(--font-fimily);
+}
+.aboutus-two img{
+    width:100vw;
+    margin: 5px auto;
+}
+/**************OUR SERVICES**********/
+.ourservices{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.ourservicas-ecitizen,
+.ourservicas-kra,
+.ourservicas-nssf,
+.ourservicas-sha{
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0);
+    padding: 5px 10px ;
+}
+.ourservicas-ecitizen img,
+.ourservicas-kra img,
+.ourservicas-nssf img,
+.ourservicas-sha img{
+    width: 15em;
+}
+.ourservicas-ecitizen li,
+.ourservicas-kra li,
+.ourservicas-nssf li,
+.ourservicas-sha li{
+    font-family: var(--font-fimily);
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.ourservicas-ecitizen a,
+.ourservicas-kra a,
+.ourservicas-nssf a,
+.ourservicas-sha a{
+    display: block;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 7px ;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: black;
+}
+.ourservicas-ecitizen a:hover,
+.ourservicas-kra a:hover,
+.ourservicas-nssf a:hover,
+.ourservicas-sha a:hover{
+    background-color: red;
+    color: black;
+    border: 1px solid red;
+}
+/*************OTHER SURVICES*********/
+.scroll-all{
+    display: block;
+    gap: 25px;
+}
+.otherservics{
+    margin-top: 25px;
+}
+.scroll img,.scroll-two img{
+width: 150px;
+margin: 0 15px ;
+}
+/**************contact us************/
+#contactus{
+    background-color: var(--nav-back);
+    margin-top: 35px;
+}
+#contactus h2{
+    color: white;
+}
+.call p,
+.email p,
+.message p{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font: var(--font-fimily);
+}
+.call,
+.email,
+.message{
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+    justify-content: center;
+}
+.call img,
+.email img,
+.message img{
+width: 25px;
+}
+/************FOOTER***********/
+.footer{
+    background-color: var(--nav-back);
+    margin-top: 2px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.footer a{
+    color: red;
+    text-decoration: none;
+}
